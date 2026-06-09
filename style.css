@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+/* GERAL */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    font-family: "Roboto", sans-serif;
+    background: #2b2b2b;
+    width: 100%;
+    min-height: 100vh;
+}
+
+button {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.625rem;
+    border: none;
+    border-radius: 50%;
+    background: #257fd3;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #46a0f5;
+}
+
+/* VIDEO */
+
+.botao-iniciar-video {
+    display: flex;
+    float: left;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.moldura-video {
+    margin: 3vw;
+    height: 10rem;
+}
+
+video {
+    border-radius: 2rem;
+    width: 20vw;
+    min-width: 15rem;
+    max-width: 25rem;
+}
+
+.container-camera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.moldura-audio {
+    height: 0.3rem;
+}
+
+/* CHAT */
+
+.message-container {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    background: #2b2b2b;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 18rem;
+    float: right;
+    margin: 1em;
+}
+
+#message-box {
+
+    resize: none;
+    background-color: #ffffff;
+    float: right;
+    height: 88vh;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    padding: 0.8rem;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.sent {
+
+    align-self: flex-end;
+    background-color: #dcf8c6;
+    border-radius: 1rem 0 1rem 1rem ;
+    border-bottom-right-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 0;
+    gap: 12px;
+}
+
+.received {
+
+    align-self: flex-start;
+    background-color: #c2c2c2;
+    border-radius: 0 1rem 1rem 1rem ;
+    border-bottom-right-radius: 5px;
+    padding: 0.8rem;
+    gap: 12px;
+}
+
+.msg-time-sent{
+
+    align-self: flex-end;
+    color: #949494;
+    font-size: 0.7rem;
+}
+
+.msg-time-received{
+
+    align-self: flex-start;
+    color: #949494;
+    font-size: 0.7rem;
+}
+
+#messageInput {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    display: flex;
+    margin-top: 0.6rem;
+    gap: 0.6rem;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+#messageInput:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow:
+        inset 1.2rem 1.2rem 3.7rem #c5c5c5,
+        inset -1.2rem -1.2rem 3.7rem #ffffff;
+    transition: 0.3s;
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.input-area {
+    display: flex;
+    float: right;
+    margin: 0.3rem;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    .video-container,
+    .message-container,
+    .botao-iniciar-video {
+        float: none;
+        width: 100%;
+    }
+
+    .message-container {
+        width: 90%;
+        min-width: 95%;
+    }
+
+    video {
+        width: 90vw;
+    }
+
+    textarea {
+        height: 50vh;
+    }
+
+    .input-area {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
