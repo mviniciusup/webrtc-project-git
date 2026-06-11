@@ -1,4 +1,4 @@
-const socket = new WebSocket("wss://52.67.79.21:3000");
+const socket = new WebSocket("wss://b0n6oxs9ja.execute-api.sa-east-1.amazonaws.com/production/");
 
 const messagesContainer = document.getElementById('message-box');
 const input = document.getElementById("messageInput");

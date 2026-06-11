@@ -4,7 +4,7 @@ const WebSocket = require("ws");
 const open = require("open").default;
 const crypto = require("crypto");
 const app = express();
-const server = http.createServer(app);
+const server = https.createServer(app);
 const wss = new WebSocket.Server({ server });
 app.use(express.static(__dirname));
 
